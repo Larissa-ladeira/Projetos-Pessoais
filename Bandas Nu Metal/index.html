@@ -4,98 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando div</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-        
-        body{
-            background-color: black;
-            color: white;
-            margin: 0px;
-            padding: 0px;
-        }
-        h1{
-            text-align: center;
-        }
-        
-        .libre-baskerville-regular {
-        font-family: "Libre Baskerville", serif;
-        font-weight: 400;
-        font-style: normal;
-        }
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 
-
-        div.container{
-            display: flex;
-            flex-wrap: wrap;/* Quebra para próxima linha após 2 divs */
-            justify-content: center;
-            gap: 10px; /* Espaço entre as divs */
-            max-width: 700px;
-            margin: 50px auto;
-        }
-
-        div.dado{
-            width: 300px;
-            height: 300px;
-            border: 2px solid white;
-            border-radius: 30px;
-            background-color: aquamarine;
-            background-size: cover; /* imagem inteira */ 
-            background-position: center;
-        }
-        div#q1{
-            background-image: url("fotos/EVANESCENCE.jpg");
-        }
-        
-        div#q2{
-            background-image: url("fotos/SLEEP\ TOKEN.jpg");
-        }
-
-        div#q3{
-            background-image: url("fotos/SLIPKNOT.jpg");
-        }
-        div#q4{
-            background-image: url("fotos/SOAD.jpg");
-        }
-        footer a{
-            text-align: center;
-            text-decoration: none;
-            color: white;
-
-        }
-        a:hover{
-            text-decoration: underline;
-        }
-
-        footer p{
-            text-align: center;
-            font-size: 1.2em;
-        }
-        a.externo::after {
-            content: '\00a0\1F517';
-        }   
-    </style>
 </head>
 <body>
     <h1>BANDAS NU METAL</h1>
     <div class="container">
 
     <abbr title="Toque para ver mais">
-    <a href="https://pt.wikipedia.org/wiki/Evanescence" target="_blank">
+    <a href="https://www.evanescence.com/home/" target="_blank">
         <div class="dado" id="q1"></div></abbr>
     </a>
+
     <abbr title="Toque para ver mais">
-    <a href="https://en.wikipedia.org/wiki/Sleep_Token" target="_blank">
+    <a href="https://www.sleep-token.com/" target="_blank">
         <div class="dado" id="q2"></div></abbr>
     </a>
+
     <abbr title="Toque para ver mais">
-    <a href="https://pt.wikipedia.org/wiki/Slipknot" target="_blank">
+    <a href="https://slipknot1.com/" target="_blank">
         <div class="dado" id="q3"></div></abbr>
     </a>
+
     <abbr title="Toque para ver mais">
-    <a href="https://pt.wikipedia.org/wiki/System_of_a_Down" target="_blank">
+    <a href="https://siteofadown.com/" target="_blank">
         <div class="dado" id="q4"></div></abbr>
-    <a>
+    </a>
     </div>
+    
     <footer>
         <p>Desenvolvido por <a href="https://github.com/Larissa-ladeira" class="externo">Larissa</a></p>
     </footer>

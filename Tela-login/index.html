@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="iusuario" name="usuario" placeholder="Seu nome de usuário" minlength="3" maxlength="10" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="isenha" name="senha" placeholder="Sua senha" maxlength="8" required>
+            </div>
+            <button type="submit" onclick="logar(); return false">Entrar</button>
+        </form>
+        <div class="link-group">
+            <a href="cadastro-senha.html">Esqueci minha senha</a>
+        </div>
+
+        <script>
+            function logar(){
+                var usuario = document.getElementById('iusuario').value;
+                var senha = document.getElementById('isenha').value;
+
+                if(usuario == "lari" && senha == "lapagani"){
+                    alert('Sucesso!');
+                    location.href = "home.html";
+                }else{
+                    alert("Usuário ou senha inválido.")
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

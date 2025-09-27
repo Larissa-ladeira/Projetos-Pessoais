@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 375px) and (max-width: 425){
+    body{
+        background-color: purple;
+    }
+}
+
+
+@media screen and(min-width: 375px) and (max-width: 425){
+
+}
+
+@media screen and (max-width:950){
+
+}

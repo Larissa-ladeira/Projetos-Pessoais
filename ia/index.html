@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    
+    <style>
+        /* Estilos Globais e Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos do Corpo da Página */
+        body {
+            background-image: linear-gradient(to right top,blue, rgb(93, 28, 168));
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container Principal do Formulário */
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Título */
+        .login-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        /* Grupo de Campos do Formulário */
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        /* Estilo dos Labels */
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        /* Estilo dos Inputs de Texto e Senha */
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efeito de Foco (Hover) */
+        .input-group input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Placeholder */
+        .input-group input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Botão de Enviar */
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #dc0ff7c0;
+            border: none;
+            border-radius: 8px;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Efeito de Hover no Botão */
+        button:hover {
+            background-color: #f500e1;
+        }
+
+        /* Links */
+        .link-group {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .link-group a {
+            color: #ffffff;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .link-group a:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Entrar</h1>
+        <form>
+            <div class="input-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Seu nome de usuário" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Sua senha" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="link-group">
+            <a href="#">Esqueci minha senha</a>
+        </div>
+    </div>
+</body>
+</html>
